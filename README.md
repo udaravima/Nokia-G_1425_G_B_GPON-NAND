@@ -95,6 +95,15 @@ bootconsole [early0] disabled
 * for me the serial consoles are disabled by default so I am blind half on the bootup.
 * recovered passwords ```ONTUSER: SUGAR2A041``` and ```admin: 1234```
 * with SSH have limited access to console and shell need a dynamic password which I don't know
+* Extracted a UBI partition from firmware use to config the router
+
+## Default accounts
+```
+root:$1$GTMUOzhf$mjhy6wET5re92IB4KHqXz.:0:0:99999:7:::
+appService:!:2:0:99999:7:::
+ONTUSER:$1$FVwz9Nrb$ApjgigdRXjTOzl1tf9ITo/:0:0:99999:7:::
+administrator:$1$upiq4Yhr$V9xNG5/VUenCFQR31m2pN1:0:0:99999:7:::
+```
 
 ### Device info
 ```
