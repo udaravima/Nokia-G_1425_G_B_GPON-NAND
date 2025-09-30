@@ -97,12 +97,17 @@ bootconsole [early0] disabled
 * with SSH have limited access to console and shell need a dynamic password which I don't know
 * Extracted a UBI partition from firmware use to config the router
 
-## Default accounts
+### Default accounts
 ```
 root:$1$GTMUOzhf$mjhy6wET5re92IB4KHqXz.:0:0:99999:7:::
 appService:!:2:0:99999:7:::
 ONTUSER:$1$FVwz9Nrb$ApjgigdRXjTOzl1tf9ITo/:0:0:99999:7:::
 administrator:$1$upiq4Yhr$V9xNG5/VUenCFQR31m2pN1:0:0:99999:7:::
+```
+#### Passwords
+```
+$1$GTMUOzhf$mjhy6wET5re92IB4KHqXz. : LA(ImvZx%8
+$1$ojmCYQtx$ktc5DH0Kvu/jCpuUSAQB0. : SUGAR2A041
 ```
 
 ### Device info
