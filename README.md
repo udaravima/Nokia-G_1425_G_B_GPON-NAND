@@ -1,8 +1,9 @@
 # Nokia-G_1425_G_B_GPON-NAND
-This tab is to discuss and research on Nokia GPON (Sri Lanka Telecome) SLT .
+This tab is to discuss and research on Nokia GPON (Sri Lanka Telecome) SLT.
 
 ## Extracted Rom file (SPI_NAND)
-* [ROM File Link G1425GB](https://drive.google.com/drive/folders/1jpPFlRSkBw2cDXV-gbNmGeSVzLFAV-jO?usp=sharing)
+* [ROM File Link G1425GB](https://drive.google.com/drive/folders/1jpPFlRSkBw2cDXV-gbNmGeSVzLFAV-jO?usp=sharing)\
+  (The Original ROM file seems to be lost, and currently, I am working on extracting the SPI_NAND from the router. I have to bit-bang since my current programmer(TL866II plus) doesn't support the chip officially.)
 
 ## Serial Log UART 
  ```
@@ -92,10 +93,10 @@ console [ttyS0] enabled
 bootconsole [early0] disabled
 ```
 ## Notes
-* for me the serial consoles are disabled by default so I am blind half on the bootup.
+* For me, the serial consoles are disabled by default, so I am blind half on the bootup.
 * recovered passwords ```ONTUSER: SUGAR2A041``` and ```admin: 1234```
-* with SSH have limited access to console and shell need a dynamic password which I don't know
-* Extracted a UBI partition from firmware use to config the router
+* With SSH have limited access to the console and shell need a dynamic password, which I don't know
+* Extracted a UBI partition from firmware used to configure the router
 
 ### Default accounts
 ```
@@ -153,6 +154,6 @@ Chipset              MTK7528H
 | 0X5380000 | 87556096  | 180879360 | 172.5 MB  | UBI erase count header, version: 1, EC: 0x76, VID header      |
 |           |           |           |           | offset: 0x800 (2 KB), data offset: 0x1000 (4 KB)              |
 +-----------+-----------+-----------+-----------+---------------------------------------------------------------+
-| file      | 268435456 | ~256MB    |           |  * All the sizes are just calculated by length of file headers|
+| file      | 268435456 | ~256MB    |           |  * All the sizes are just calculated by the length of file headers|
 +-----------+-----------+-----------+-----------+---------------------------------------------------------------+
 ```
