@@ -1,6 +1,24 @@
 # Nokia-G_1425_G_B_GPON-NAND
 This tab is to discuss and research on Nokia GPON (Sri Lanka Telecom) SLT.
 
+## Documentation
+A full, plain-language guide to this device lives in [`docs/`](docs/README.md) — it turns the
+raw diagnostic dump and the flash-chip teardown into 13 readable docs. **Start at the
+[docs index](docs/README.md)**, which carries the complete table; the highlights:
+
+| Doc | What it covers |
+|-----|----------------|
+| [01 · Device overview](docs/01-device-overview.md) | Identity, hardware, firmware, roles — start here |
+| [02 · Glossary](docs/02-glossary.md) | Every acronym in the logs, decoded |
+| [11 · Security, accounts & secrets](docs/11-security-accounts-secrets.md) | Who can log in, the weak hashes, the encrypted config |
+| [12 · Boot chain & access](docs/12-boot-chain-and-access.md) | Boot chain + flash layout from the serial log, shell-access status |
+| [13 · Firmware extraction](docs/13-firmware-extraction.md) | Dumping the NAND, the partition map, unpacking the squashfs, the bit-rot |
+
+### Session & forensic reports
+Deeper reverse-engineering notes — each claim tagged **VERIFIED** / **INFERRED**:
+- [NAND forensic analysis](docs/handovers/handover/2026-08-19-nokia-ont-forensic-report.md) — dump integrity, the 13-partition map, the dual A/B banks, the eFUSE-rooted secure boot, and the vendor-LZMA extraction blocker.
+- [Unlock & UBI-extraction handover](docs/handovers/handover/2026-08-19-nokia-ont-unlock-and-ubi.md) — extracting the `config` UBI volume and the active-bank decrypt investigation.
+
 ## Extracted Rom file (SPI_NAND)
 * [ROM File Link G1425GB](https://drive.google.com/file/d/1ak7u0bh-4_GlR4Yj-KVntz59vzU1n0VD/view?usp=sharing)\
   (The Original ROM file appears to be lost. Additionally, I received a new router from my ISP (same model, different NAND), and I am currently working on extracting the SPI NAND from the router. I have to bit-bang since my current programmer(TL866II plus) doesn't support the chip officially.)

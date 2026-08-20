@@ -41,6 +41,14 @@ the noise.
 | — | [12-boot-chain-and-access.md](12-boot-chain-and-access.md) | The boot chain and flash layout from the serial log, plus the honest status of the shell-access investigation. |
 | — | [13-firmware-extraction.md](13-firmware-extraction.md) | **How we cracked open the flash chip — explained simply.** Dumping the NAND, the partition map, unpacking the squashfs, the 115 bit-rotted files, and why the *live* OS bank is locked. |
 
+## Deeper reports — the reverse-engineering write-ups
+
+Two investigation-style documents sit alongside the numbered guide above. They're raw RE
+notes rather than explainers — each claim tagged **VERIFIED** or **INFERRED**:
+
+- [2026-08-19 · NAND forensic analysis](handovers/handover/2026-08-19-nokia-ont-forensic-report.md) — dump integrity, the 13-partition map, the dual A/B firmware banks, the eFUSE-rooted secure boot, and the vendor-LZMA blocker that stopped a full rootfs extraction.
+- [2026-08-19 · Unlock & UBI-extraction handover](handovers/handover/2026-08-19-nokia-ont-unlock-and-ubi.md) — the continuation brief: pulling the `config` UBI volume and the active-bank decrypt project.
+
 ## The mental model to carry through all of it
 
 ```

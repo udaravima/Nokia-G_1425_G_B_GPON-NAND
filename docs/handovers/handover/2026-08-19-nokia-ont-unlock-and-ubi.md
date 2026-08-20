@@ -25,7 +25,7 @@ repo. The dump is provably perfect. Two goals remain:
 ## 0.5 — STATUS UPDATE (2026-08-19 evening): READ THIS FIRST
 
 Substantial progress since §0 was written. Full proof for everything here is in the
-companion **forensic report**: `docs/handover/2026-08-19-nokia-ont-forensic-report.md`
+companion **forensic report**: [2026-08-19-nokia-ont-forensic-report.md](2026-08-19-nokia-ont-forensic-report.md)
 (esp. §5 eFUSE, §6 vendor-LZMA, §7 UBI, §10 live access). Corrections to older facts
 below: the SoC is **EN7528 / en751221** (not EN7512); the running image is
 `3FE49568HJLL88` build `HJL.L88p01`, product **Nokia G-1425G-A (`g1425ga`)**, GPON.

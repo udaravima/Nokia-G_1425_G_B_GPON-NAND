@@ -7,7 +7,7 @@
 Each finding below is stated as **Claim → Method → Proof → Interpretation**, and every claim is tagged
 **[VERIFIED]** (read directly from a tool output / the bytes) or **[INFERRED]** (reasoned from evidence,
 not directly observed). The companion continuation brief is
-`docs/handover/2026-08-19-nokia-ont-unlock-and-ubi.md`.
+[2026-08-19-nokia-ont-unlock-and-ubi.md](2026-08-19-nokia-ont-unlock-and-ubi.md).
 
 ---
 
